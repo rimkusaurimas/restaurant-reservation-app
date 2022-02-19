@@ -1,0 +1,52 @@
+@import 'src/styles/base/base';
+
+.reservation {
+    &Card {
+        display: flex;
+        height: 16rem;
+        padding: 1.6rem;
+    }
+
+    &Image {
+        margin-right: 1.6rem;
+        max-width: 6.6rem;
+        object-fit: contain;
+    }
+
+    &Subtext {
+        color: $color-slate-gray;
+        font-size: $font-size-s;
+        text-transform: uppercase;
+    }
+
+    &Footer {
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        &Buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 15rem;
+        }
+    }
+
+    &Info {
+        &Section {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        &Name {
+            line-height: 1;
+            margin: 0.4rem 0;
+        }
+
+        &Availability {
+            font-size: $font-size-s;
+            text-transform: uppercase;
+        }
+    }
+}

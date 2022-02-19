@@ -1,0 +1,35 @@
+@import './src/styles/base/base';
+
+.container {
+    &Header {
+        padding-bottom: $section-header-bottom-space;
+    }
+
+    &Card {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+
+    &Item {
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 2rem;
+        width: 50%;
+
+        &Icon {
+            color: $color-malibu;
+            margin-right: 1.2rem;
+        }
+
+        &Info {
+            color: $color-slate-gray;
+            font-weight: $font-weight-semibold;
+            text-decoration: none;
+            text-transform: uppercase;
+        }
+    }
+}

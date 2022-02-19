@@ -1,0 +1,22 @@
+@import './src/styles/base/base';
+
+.wrapper {
+    align-items: center;
+    background: $color-pickled-bluewood;
+    border-radius: $border-xl;
+    color: $color-energy-yellow;
+    display: inline-flex;
+    max-height: 3.2rem;
+    padding: 0.8rem 1.2rem;
+}
+
+.count {
+    display: inline-block;
+    font-weight: $font-weight-semibold;
+    line-height: 1.15;
+    padding-left: 0.9rem;
+}
+
+.icon {
+    color: $color-pickled-bluewood;
+}

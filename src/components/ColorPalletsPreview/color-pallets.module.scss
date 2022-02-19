@@ -1,0 +1,91 @@
+@import './src/styles/base/base';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+
+.colorNames {
+    align-items: center;
+    color: $color-black;
+    display: flex;
+    flex-direction: column;
+    font-family: $font-roboto;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.circle {
+    align-items: center;
+    border-radius: 50%;
+    display: flex;
+    height: 16rem;
+    justify-content: center;
+    width: 16rem;
+
+    &.colorBlack {
+        background-color: $color-black;
+    }
+
+    &.colorMidnight {
+        background-color: $color-midnight;
+    }
+
+    &.colorFiord {
+        background-color: $color-fiord;
+    }
+
+    &.colorSlateGray {
+        background-color: $color-slate-gray;
+    }
+
+    &.colorGrayChateau {
+        background-color: $color-gray-chateau;
+    }
+
+    &.colorGhost {
+        background-color: $color-ghost;
+    }
+
+    &.colorIron {
+        background-color: $color-iron;
+    }
+
+    &.colorPorcelainDark {
+        background-color: $color-porcelain-dark;
+    }
+
+    &.colorPorcelain {
+        background-color: $color-porcelain;
+    }
+
+    &.colorElectricViolet {
+        background-color: $color-electric-violet;
+    }
+
+    &.colorMagicMint {
+        background-color: $color-magic-mint;
+    }
+
+    &.colorWildWatermelon {
+        background-color: $color-wild-watermelon;
+    }
+
+    &.colorMalibu {
+        background-color: $color-malibu;
+    }
+
+    &.colorEnergyYellow {
+        background-color: $color-energy-yellow;
+    }
+
+    &.colorMuave {
+        background-color: $color-muave;
+    }
+
+    &.colorMirage {
+        background-color: $color-mirage;
+    }
+}

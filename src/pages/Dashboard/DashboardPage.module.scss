@@ -1,0 +1,10 @@
+@import './src/styles/base/base';
+
+.dashboardSection {
+    margin-bottom: $space-between-sections;
+
+    &:nth-child(1) {
+        display: flex;
+        justify-content: space-between;
+    }
+}

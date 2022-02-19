@@ -1,0 +1,106 @@
+/* stylelint-disable sh-waqar/declaration-use-variable */
+@charset "utf-8";
+
+@import 'base/base';
+@import 'mixins/mixins';
+
+@import 'print';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: $default-font-color;
+    font-family: $font-roboto;
+    font-size: $font-size-base;
+    font-weight: $font-weight-medium;
+}
+
+.elementIsHidden {
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+h1,
+.heading1 {
+    font-size: 3.6rem;
+}
+
+h2,
+.heading2 {
+    font-size: 3.2rem;
+}
+
+.heading2-alt {
+    font-size: 2.4rem;
+    font-weight: $font-weight-bold;
+}
+
+h3,
+.heading3 {
+    font-size: 2.4rem;
+}
+
+.heading3-alt {
+    font-size: 2rem;
+}
+
+h4,
+.heading4 {
+    font-size: 2rem;
+}
+
+.heading4-alt {
+    font-size: 1.6rem;
+}
+
+h5,
+.heading5 {
+    font-size: 1.8rem;
+}
+
+p,
+.paragraph {
+    font-size: 1.6rem;
+}
+
+caption,
+.caption {
+    font-size: 1.4rem;
+}
+
+small,
+.small {
+    font-size: $font-size-base;
+}
+
+h1,
+.heading1,
+h2,
+.heading2,
+.heading2-alt,
+h3,
+.heading3,
+.heading3-alt,
+h4,
+.heading4,
+.heading4-alt,
+h5,
+.heading5,
+p,
+.paragraph,
+caption,
+.caption,
+small,
+.small {
+    line-height: 1.6;
+}

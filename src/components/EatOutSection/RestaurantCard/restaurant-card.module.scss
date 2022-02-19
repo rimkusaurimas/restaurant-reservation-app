@@ -1,0 +1,204 @@
+@import './src/styles/base/base';
+@import './src/styles/mixins/mixins';
+
+$font-big: 2.4rem;
+$font-small: 1rem;
+$description-height: 7rem;
+
+.card {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: $border-xl;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 22.9rem;
+
+    &TopWrapper {
+        display: flex;
+        justify-content: space-between;
+        padding: 1.6rem 1.7rem 0;
+    }
+
+    &TopWrapperNewPlaces {
+        display: flex;
+        justify-content: flex-end;
+        padding: 1.6rem 1.7rem 0;
+    }
+
+    .lowerWrapper {
+        background: linear-gradient(
+            180deg,
+            rgba(255, 255, 255, 0) 5%,
+            rgba(255, 255, 255, 0.7903362028405112) 35%,
+            rgba(255, 255, 255, 1) 56%
+        );
+
+        border-bottom-left-radius: $border-xl;
+        border-bottom-right-radius: $border-xl;
+        height: 15rem;
+        min-width: 100%;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        padding-bottom: 2rem;
+        padding-left: 1.7rem;
+    }
+
+    .topTextWrapper {
+        align-items: center;
+        color: $color-slate-gray;
+        display: flex;
+        justify-content: flex-start;
+        max-width: 22rem;
+        min-width: 4rem;
+        text-transform: uppercase;
+
+        .topText {
+            font-size: $font-small;
+            font-weight: $font-weight-medium;
+            line-height: 1.5;
+            padding-right: 3rem;
+            position: relative;
+
+            &:not(:last-child)::after {
+                background: $color-slate-gray;
+                border-radius: $border-radius-medium;
+                content: '';
+                display: inline-block;
+                padding: 0.3rem;
+                position: absolute;
+                right: 1.2rem;
+                top: 0.4rem;
+            }
+        }
+    }
+
+    .title {
+        color: $color-midnight;
+        font-size: $font-big;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.05rem;
+        max-width: 26rem;
+        overflow: hidden;
+        text-decoration: none;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        &Wrapper {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 2.53rem;
+        }
+    }
+
+    .workingDaysWrapper {
+        display: flex;
+        flex-direction: row;
+        max-width: 80%;
+    }
+
+    .workingDays {
+        color: $color-slate-gray;
+        font-size: $font-small;
+        font-weight: $font-weight-medium;
+        line-height: 1.5;
+
+        &:not(:first-child) {
+            padding-left: 1rem;
+        }
+    }
+}
+
+.bottomText {
+    background: $color-white;
+    border-bottom-left-radius: $border-xl;
+    border-bottom-right-radius: $border-xl;
+    font-size: $font-size-small;
+    margin-bottom: 10rem;
+    margin-top: -1rem;
+    padding: 0 1.7rem;
+
+    &Title {
+        @include overflow-text;
+        color: $color-midnight;
+        font-weight: $font-weight-medium;
+        letter-spacing: 0.05rem;
+
+        &Wrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &Favorite {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    &WorkingDays {
+        @include overflow-text;
+        color: $color-slate-gray;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        max-width: 80%;
+    }
+
+    &Website {
+        align-items: center;
+        display: flex;
+        font-size: $font-size-s;
+        margin-bottom: 0.5rem;
+        text-transform: uppercase;
+
+        &Link {
+            @include overflow-text;
+            color: $color-fiord;
+            text-decoration: none;
+        }
+    }
+
+    &Location {
+        align-items: center;
+        color: $color-fiord;
+        display: flex;
+        font-size: $font-size-s;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    &Description {
+        color: $color-slate-gray;
+        font-weight: $font-weight-regular;
+        height: $description-height;
+    }
+}
+
+.readMore {
+    display: flex;
+    justify-content: flex-end;
+
+    &Link {
+        color: $color-slate-gray;
+        display: inline-block;
+        font-size: $font-size-s;
+        font-weight: $font-weight-medium;
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+        text-decoration: none;
+        text-transform: uppercase;
+    }
+}
+
+.icon {
+    margin-right: 0.8rem;
+    min-width: 1.8rem;
+}

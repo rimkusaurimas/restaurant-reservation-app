@@ -1,0 +1,10 @@
+.mainNavigationList {
+    display: flex;
+    justify-content: space-between;
+
+    &Item {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+}

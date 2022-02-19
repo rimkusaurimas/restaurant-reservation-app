@@ -1,0 +1,47 @@
+@import './src/styles/base/base';
+
+.commentSection {
+    margin: 0.8rem 0;
+    max-height: 9.5rem;
+    min-height: 9.5rem;
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    overflow-y: scroll;
+    padding: 0 1.6rem;
+    scrollbar-width: none; /* for Firefox */
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.commentContainer {
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+    margin-top: 0.8rem;
+}
+
+.commentDate {
+    display: flex;
+    justify-content: space-between;
+    line-height: 1.5;
+    margin-bottom: 0.4rem;
+
+    &UserName {
+        font-weight: $font-weight-medium;
+        text-transform: uppercase;
+    }
+
+    &Time {
+        margin-left: 0.6rem;
+    }
+}
+
+.separationLine {
+    background: $color-tiara;
+    height: 0.1rem;
+    margin: 0 1.6rem;
+}
+
+.separationLine:nth-child(1) {
+    margin-top: 0.8rem;
+}

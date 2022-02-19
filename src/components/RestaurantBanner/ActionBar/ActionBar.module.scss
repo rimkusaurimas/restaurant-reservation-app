@@ -1,0 +1,20 @@
+@import './src/styles/base/base';
+
+.box {
+    align-items: center;
+    background-color: $color-porcelain;
+    border-radius: $border-m;
+    box-shadow: $box-shadow-small;
+    color: $color-fiord;
+    display: flex;
+    font-weight: $font-weight-semibold;
+    height: 6rem;
+    justify-content: space-between;
+    padding: 1.2rem 1.6rem;
+    text-transform: uppercase;
+}
+
+.actionGroup {
+    display: flex;
+    gap: 1.7rem;
+}

@@ -1,0 +1,23 @@
+@import './src/styles/base/base';
+
+.btn {
+    align-items: center;
+    background-color: $color-white;
+    border: 0.1rem solid $color-iron;
+    color: $color-fiord;
+    cursor: pointer;
+    display: inline-flex;
+    height: 2.4rem;
+    justify-content: center;
+    width: 2.4rem;
+}
+
+.left {
+    border-bottom-left-radius: $border-xl;
+    border-top-left-radius: $border-xl;
+}
+
+.right {
+    border-bottom-right-radius: $border-xl;
+    border-top-right-radius: $border-xl;
+}

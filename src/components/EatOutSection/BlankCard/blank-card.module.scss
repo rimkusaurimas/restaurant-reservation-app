@@ -1,0 +1,8 @@
+@import './src/styles/base/base';
+
+.card {
+    background: $color-white;
+    border-radius: $border-xl;
+    box-shadow: $box-shadow-small;
+    min-width: 32rem;
+}

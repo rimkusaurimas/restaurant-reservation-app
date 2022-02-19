@@ -1,0 +1,25 @@
+@import './src/styles/base/base';
+
+.widget {
+    &Header {
+        color: $color-fiord;
+        font-weight: $font-weight-bold;
+        line-height: 1.33;
+    }
+
+    &ListBox {
+        column-gap: $flex-column-gap;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        margin-top: 2.4rem;
+
+        &Item {
+            flex: 1;
+        }
+    }
+
+    &Link {
+        text-decoration: none;
+    }
+}

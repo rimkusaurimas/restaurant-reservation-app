@@ -1,0 +1,23 @@
+@import 'src/styles/base/base';
+
+.inputWrapper {
+    position: relative;
+}
+
+.search {
+    &Input {
+        border: 1px solid $color-ghost;
+        border-radius: $border-m;
+        color: $color-fiord;
+        height: 4.8rem;
+        margin-right: 4.3rem;
+        padding-left: 4rem;
+        width: 72.4rem;
+    }
+
+    &Icon {
+        left: 1.5rem;
+        position: absolute;
+        top: 1.5rem;
+    }
+}

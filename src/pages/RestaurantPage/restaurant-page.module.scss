@@ -1,0 +1,13 @@
+@import './src/styles/base/base';
+@import './src/styles/mixins/mixins';
+
+.restaurantPageSection {
+    @include layout-section-base;
+    column-gap: $flex-column-gap;
+    margin-top: 2.8rem;
+}
+
+.infoAndLocationItem {
+    max-width: 89rem;
+    min-width: 70rem;
+}

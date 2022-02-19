@@ -1,0 +1,21 @@
+@import './src/styles/base/base';
+
+.locationContainer {
+    margin-top: $margin-top-m;
+
+    &Header {
+        padding-bottom: $section-header-bottom-space;
+    }
+
+    &Map {
+        border-radius: $border-xl;
+        height: 41rem;
+        width: 100%;
+    }
+}
+
+.errorMessage {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}

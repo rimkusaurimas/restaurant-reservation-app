@@ -1,0 +1,53 @@
+@import './src/styles/base/base';
+
+.commentForm {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2rem 1.6rem;
+}
+
+.imageContainer {
+    border: 0;
+    border-radius: $border-radius-medium;
+    height: 2.4rem;
+    width: 2.4rem;
+
+    &Image {
+        border-radius: $border-radius-medium;
+        width: 100%;
+    }
+}
+
+.commentInput {
+    border: 0;
+    color: $color-fiord;
+    margin: 0 1.2rem;
+    width: 100%;
+
+    &:focus {
+        border-bottom: 0.1rem solid $color-tiara;
+        outline: 0;
+    }
+
+    &::placeholder {
+        color: $color-gray-chateau;
+    }
+}
+
+.commentButton {
+    background: none;
+    border: 0;
+    color: $color-slate-gray;
+    cursor: pointer;
+    font-size: $font-size-s;
+    font-weight: $font-weight-medium;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $color-fiord;
+    }
+
+    &:active {
+        color: $color-mine-shaft;
+    }
+}

@@ -1,0 +1,6 @@
+$base: 0;
+$above: 1;
+$below: -1;
+
+$z-dropdown-menu: $above;
+$z-tooltip: $z-dropdown-menu + $above;

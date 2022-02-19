@@ -1,0 +1,89 @@
+@import './src/styles/base/base';
+
+.bdayCardTop {
+    min-height: 4.8rem;
+}
+
+.birthDayCardContainer {
+    max-width: 41.6rem;
+}
+
+.birthdayCard {
+    color: $color-midnight;
+    display: flex;
+    flex-direction: column;
+    font-size: $font-size-s;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    width: 100%;
+
+    &BackgroundImage {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1.6rem;
+        width: 85%;
+    }
+
+    &ProfileImage {
+        background-size: cover;
+        border-radius: 50%;
+        height: 9.6rem;
+        left: 0;
+        margin-left: auto;
+        margin-right: auto;
+        position: absolute;
+        right: 0;
+        top: -4.8rem;
+        width: 9.6rem;
+    }
+
+    &UserName {
+        font-weight: $font-weight-medium;
+        margin-top: 5rem;
+        text-transform: uppercase;
+    }
+
+    &Birthday {
+        display: flex;
+        font-weight: $font-weight-regular;
+        justify-content: center;
+        margin-top: 0.4rem;
+
+        &Date {
+            font-weight: $font-weight-medium;
+        }
+    }
+
+    &Wish {
+        margin-top: 0.4rem;
+    }
+
+    &Divider {
+        background-color: $color-geyser;
+        border: 0;
+        height: 1px;
+        margin: 1.6rem;
+    }
+
+    &Bottom {
+        align-items: center;
+        color: $pale-sky;
+        display: flex;
+        flex-direction: flex-start;
+        margin: 1.6rem;
+        margin-top: 0;
+
+        &Wishes {
+            margin-left: 0.5rem;
+            margin-right: 0.8rem;
+        }
+
+        &Comments {
+            margin-left: 0.5rem;
+        }
+    }
+}

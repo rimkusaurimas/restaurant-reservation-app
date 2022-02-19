@@ -1,0 +1,29 @@
+@import './src/styles/base/base';
+
+$clock-font-size: 10rem;
+$text-font-size: 3.6rem;
+$text-font-family: $font-roboto;
+
+.container {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    max-width: 48rem;
+}
+
+@mixin text-styles {
+    color: $color-fiord;
+    font-weight: $font-weight-semibold;
+}
+
+.clock {
+    @include text-styles;
+    display: inline-block;
+    font-size: $clock-font-size;
+    max-width: 27.4rem;
+}
+
+.text {
+    @include text-styles;
+    display: inline-block;
+    font-size: $text-font-size;
+}

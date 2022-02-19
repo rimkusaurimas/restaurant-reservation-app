@@ -1,0 +1,38 @@
+@import './src/styles/base/base';
+
+@mixin bread-crumb-text {
+    color: $color-gray-chateau;
+    font-weight: $font-weight-medium;
+    line-height: 1.5;
+    padding: 0.3rem 0.2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.breadCrumbsNavigation {
+    &List {
+        display: flex;
+        flex-direction: row;
+        font-size: $font-size-s;
+        list-style: none;
+
+        &Item:not(:last-child)::after {
+            color: $color-gray-chateau;
+            content: '\003E';
+            margin: 0 0.3rem;
+        }
+    }
+
+    &Text {
+        @include bread-crumb-text;
+        color: $color-slate-gray;
+    }
+
+    &Links {
+        @include bread-crumb-text;
+
+        &:hover {
+            color: $color-slate-gray;
+        }
+    }
+}

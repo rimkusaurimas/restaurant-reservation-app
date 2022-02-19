@@ -1,0 +1,15 @@
+@import './src/styles/base/base';
+
+.heart {
+    stroke: $color-fiord;
+    width: 2rem;
+
+    &IsFilled {
+        fill: $color-wild-watermelon;
+        stroke: $color-wild-watermelon;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}

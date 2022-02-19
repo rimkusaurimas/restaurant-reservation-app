@@ -1,0 +1,44 @@
+@import './src/styles/base/base';
+
+.emailInputWrapper {
+    margin-top: 3.2rem;
+}
+
+.passwordInputWrapper {
+    margin-top: 2.5rem;
+}
+
+.formFooter {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.3rem;
+
+    &HelperText {
+        font-weight: $font-weight-regular;
+    }
+
+    &NavigationLink {
+        color: $color-electric-violet;
+        font-weight: $font-weight-regular;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-electric-violet-secondary;
+            transition: 0.2s ease-in;
+        }
+
+        &:active {
+            color: $color-electric-violet-active;
+            transition: 0.2s ease-out;
+        }
+    }
+}
+
+.error {
+    color: $color-wild-watermelon;
+    font-weight: $font-weight-medium;
+    line-height: 1.5;
+    padding-top: 2rem;
+    text-transform: uppercase;
+}

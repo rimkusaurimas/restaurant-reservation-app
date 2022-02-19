@@ -1,0 +1,10 @@
+@import './src/styles/base/base';
+
+.reviewsSection {
+    max-width: 40rem;
+
+    &Header {
+        font-weight: $font-weight-bold;
+        padding-bottom: $section-header-bottom-space;
+    }
+}

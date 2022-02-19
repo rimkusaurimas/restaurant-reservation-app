@@ -1,0 +1,35 @@
+@import './src/styles/base/base';
+
+$spinner-moving-color: $color-electric-violet;
+$spinner-static-color: $color-ghost;
+
+.loader {
+    opacity: 1;
+    padding-top: 300px;
+    position: relative;
+
+    &::before {
+        animation: spinner linear infinite 1s;
+        border: solid 5px $spinner-static-color;
+        border-bottom-color: $spinner-moving-color;
+        border-radius: 50%;
+        content: '';
+        height: 40px;
+        left: 50%;
+        opacity: inherit;
+        position: absolute;
+        transform: translate(-50%, -50%, 0);
+        transform-origin: center;
+        width: 40px;
+    }
+}
+
+@keyframes spinner {
+    0% {
+        transform: translate3d(-50%, -50%, 0) rotate(0deg);
+    }
+
+    100% {
+        transform: translate3d(-50%, -50%, 0) rotate(360deg);
+    }
+}

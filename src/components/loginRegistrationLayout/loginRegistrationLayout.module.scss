@@ -1,0 +1,52 @@
+@import './src/styles/base/base';
+
+$container-background-color: $color-white;
+$body-background-color: $color-iron;
+$team-logo-text-color: $color-mine-shaft;
+$team-logo-font-size: 2.5rem;
+
+.main {
+    align-items: center;
+    background-color: $body-background-color;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+
+    &Box {
+        margin: 2rem;
+        max-width: 54.4rem;
+        width: 100%;
+    }
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 7.2rem;
+    margin-top: 2rem;
+
+    &Img {
+        height: 6.8rem;
+        width: 6.8rem;
+    }
+
+    &Text {
+        color: $team-logo-text-color;
+        font-size: $team-logo-font-size;
+        font-weight: $font-weight-bold;
+        line-height: 1.2;
+        margin-left: 1.4rem;
+        max-width: 8rem;
+    }
+}
+
+.formContainer {
+    background-color: $container-background-color;
+    border-radius: $border-xl;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+    color: $color-fiord;
+    margin-bottom: 13.7rem;
+    padding: 4rem 3.2rem;
+}

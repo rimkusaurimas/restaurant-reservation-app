@@ -1,0 +1,21 @@
+@import './src/styles/base/base';
+
+.newPlacesTop {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: $section-header-bottom-space;
+    width: 100%;
+
+    &Title {
+        display: inline-block;
+    }
+}
+
+.newPlacesSlidesContainer {
+    margin: 0 -1.2rem;
+}
+
+.restaurantCard {
+    margin: 0 1.2rem;
+}

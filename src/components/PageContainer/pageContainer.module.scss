@@ -1,0 +1,9 @@
+.container {
+    margin: 0 auto;
+    max-width: 1344px;
+    min-width: 980px;
+
+    &IsFullWidth {
+        max-width: none;
+    }
+}

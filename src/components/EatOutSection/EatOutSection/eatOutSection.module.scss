@@ -1,0 +1,14 @@
+@import './src/styles/base/base';
+
+.widget {
+    &ListBox {
+        column-gap: $flex-column-gap;
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+
+        &Item {
+            flex: 1;
+        }
+    }
+}

@@ -1,0 +1,47 @@
+@import './src/styles/base/base';
+
+.banner {
+    align-items: flex-end;
+    display: flex;
+    height: 57rem;
+    position: relative;
+
+    &Items {
+        flex-grow: 1;
+        padding-bottom: 2.4rem;
+    }
+}
+
+.bannerImage {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    opacity: 0.7;
+    position: absolute;
+    top: -5.6rem;
+    width: 100%;
+    z-index: $below;
+}
+
+.categories {
+    display: flex;
+
+    .category {
+        background-color: $color-midnight;
+        border-radius: $border-xl;
+        color: $color-white;
+        font-size: $font-size-s;
+        font-weight: $font-weight-medium;
+        padding: 0.6rem 1.2rem;
+    }
+
+    .category:not(:last-child) {
+        margin-right: 1.2rem;
+    }
+}
+
+.title {
+    color: $color-midnight;
+    font-size: $font-size-xxl;
+    padding-bottom: 4.8rem;
+}

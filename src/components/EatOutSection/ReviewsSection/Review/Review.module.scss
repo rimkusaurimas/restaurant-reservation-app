@@ -1,0 +1,36 @@
+@import './src/styles/base/base';
+
+.review {
+    background-color: $color-white;
+    border-radius: $border-xl;
+    box-shadow: $box-shadow-small;
+    color: $color-midnight;
+    padding: 2rem 1.7rem;
+    position: relative;
+
+    &:not(:last-child) {
+        margin-bottom: 1.6rem;
+    }
+
+    &RatingWrapper {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    &StarRating {
+        border-bottom-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    &Username {
+        font-size: $font-size-m;
+        font-weight: $font-weight-semibold;
+        text-transform: uppercase;
+    }
+
+    &Comment {
+        font-size: $font-size-m;
+        font-weight: $font-weight-regular;
+    }
+}

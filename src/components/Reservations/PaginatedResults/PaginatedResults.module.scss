@@ -1,0 +1,43 @@
+@import 'src/styles/base/base';
+
+.reservationsItemContainer {
+    margin-top: 2.4rem;
+}
+
+.pagination {
+    &Container {
+        display: flex;
+        gap: 1.6rem;
+        justify-content: center;
+        margin-top: 2.4rem;
+    }
+
+    &List,
+    &Arrow,
+    &Break {
+        list-style: none;
+    }
+
+    &Link {
+        align-items: center;
+        background: $color-white;
+        border: 1px solid $color-ghost;
+        border-radius: $border-m;
+        cursor: pointer;
+        display: flex;
+        font-size: $font-size-m;
+        font-weight: $font-weight-bold;
+        height: 3.2rem;
+        justify-content: center;
+        width: 3.2rem;
+
+        &Active {
+            background: $color-electric-violet;
+            color: $color-white;
+        }
+
+        &Disabled {
+            opacity: 0.4;
+        }
+    }
+}

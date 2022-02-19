@@ -1,0 +1,17 @@
+@import './src/styles/base/base';
+
+.masonryGrid {
+    column-gap: $flex-column-gap;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.4rem;
+    width: auto;
+}
+
+.masonryGridColumn {
+    background-clip: padding-box;
+}
+
+.masonryGridColumn > div section {
+    margin-bottom: 4.8rem;
+}
