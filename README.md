@@ -1,5 +1,3 @@
-🚨 Be sure to update this file according to your team.
-
 ## Run the project
 
 - To run this project you will need [Node](https://nodejs.org/en/). We strongly recommend to use [nvm](https://github.com/nvm-sh/nvm) for installing node.
@@ -47,9 +45,3 @@ Replaces SVG stroke value to currentColor.
 ### `npm run update-sprite`
 
 Optimizes and add SVG to one file (sprite).
-
-## Learn More
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-# sourcery-academy-project
-# sourcery-academy-project
