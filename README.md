@@ -4,11 +4,16 @@ An application for viewing your favourite local restaurants. Built with ReactJS.
 
 ## Project Screen Shots
 
+#### Login screen
 ![Login screen](https://aurimasrimkus.lt/sourcery-ss/login.png)
+#### Dashboard
 ![Dashboard](https://aurimasrimkus.lt/sourcery-ss/dashboard.png)
 ![Dashboard extended](https://aurimasrimkus.lt/sourcery-ss/dashboard2.png)
+#### Eat-out section
 ![Eat-out section](https://aurimasrimkus.lt/sourcery-ss/eatout.png)
+#### Single restaurant page
 ![Single restaurant page](https://aurimasrimkus.lt/sourcery-ss/restaurant.png)
+#### Reservations page
 ![Reservations page](https://aurimasrimkus.lt/sourcery-ss/reservations.png) 
 
 ## Run the project
